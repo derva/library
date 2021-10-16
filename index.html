@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>Library app
+    <header> ~ Library app ~
         <blockquote>“Think before you speak. Read before you think.”
             <cite>― Fran Lebowitz</cite></blockquote>
     </header>
+    <div class="box-input">
+        <form id="FORM">
+            <label for="author">Author: </label><input type="text" name="author" id="author"><br>
+            <label for="title">Title: </label><input type="text" name="title" id="title"> <br>
+            <label for="pages">Pages: </label><input type="number" min="0" max="9999" name="pages" id="pages"> <br>
+            <label for="read">Read: </label><input type="checkbox" value="true" checked name="read" id="read"> <br>
+            <button id="finish-addbook" type="button">Add book</button>
+        </form>
+    </div>
     <div id="content">
         <div class="books">
-            <div class="bookCard">
+            <!--div class="bookCard">
                 <h2>Data Structures and Algorithms in C++</h2>
                 <h3>Imaginary author</h3>
                 <p>O(n!)</p>
@@ -25,11 +34,11 @@
                 <h3>Author of book</h3>
                 <p>Number of pages</p>
                 <h4>Not read yet</h4>
-            </div>             
+            </div-->             
             
         </div>
         <div class="addbook">
-            <button id="newbook">Add book</button>
+            <button id="newbook" type="button">Add book</button>
         </div>
     </div>
     <footer>© by derva | 2021 | Tuzla, Bosnia and Hercegovina</footer>
